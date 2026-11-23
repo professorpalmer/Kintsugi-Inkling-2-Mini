@@ -91,6 +91,9 @@ glibc 2.34+ (Ubuntu 22.04 and 24.04). Full guide: [bundle-linux/README.md](bundl
 | [engine/](engine/README.md) | The engine (a llama.cpp fork): what it adds, where the source is, how to build it, the driver needs. |
 | [benchmarks/](benchmarks/README.md) | Each number on the card: the test, the settings, the card and the date. |
 
+> **Important for multi-turn and agent use:** send the model's earlier thinking (`reasoning_content`) back with each
+> earlier assistant turn. Users report much worse results without it (we did not measure that case). See [harnesses/](harnesses/README.md), step 4.
+
 Licences: [LICENSE](LICENSE) (Apache-2.0) and [NOTICE](NOTICE). Use of the model is also subject to the Thinking
 Machines [Model Acceptable Use Policy](https://thinkingmachines.ai/model-acceptable-use-policy). Credits:
 [CREDITS.md](CREDITS.md). Problems, numbers from your card and fixes: please open an issue or a pull request.

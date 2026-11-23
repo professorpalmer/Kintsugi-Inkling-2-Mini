@@ -15,6 +15,13 @@ version that we tested, the result, and the minimum settings for each harness. (
 3. Thinking effort: the launcher default is `high` (the model's own default). A harness that sends its own effort
    (Codex: `model_reasoning_effort`) overrides it for its requests. For fast agent turns, try `medium`.
 
+4. **Send the earlier thinking back.** Inkling 2 Mini needs its own earlier reasoning in the conversation. The
+   server returns it as `reasoning_content`; the harness must send that field back with each earlier assistant
+   turn. If a harness drops it, users report much worse multi-turn and agent results (we did not measure that
+   case), and the server must also read the whole context again on each turn (slow at long context; measured). The four harnesses below send it back in the
+   versions we tested, and so does the AppWorld agent we used for our scores. Check this first if a harness or
+   your own client gives poor results.
+
 ## What we tested
 
 We gave each harness the same 6 small tasks in a small Python repository. The tasks were: read a file, fix a function
