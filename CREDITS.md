@@ -125,6 +125,11 @@ The public corpus of the Qwen3.8-27B quant challenge (StillDeadcode, CC BY 4.0) 
 WikiText-2 (Merity et al., the wikitext-2-raw-v1 test split, CC BY-SA) for the engine's KL checks; our own needle,
 code-copy and harness tests.
 
+## Contributors
+
+- **Elhussein Ahmed ([@emourad](https://github.com/emourad))**: the Linux launcher's `LLAMA_SERVER` override (the
+  bundled engine stays the default) and the clean stop of the engine and the layer on every failed start (#2).
+
 ## This release
 
 Cary Palmer ([professorpalmer](https://github.com/professorpalmer)): the reference forward pass, the Hessian capture
