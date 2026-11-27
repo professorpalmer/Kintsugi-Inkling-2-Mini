@@ -7,6 +7,7 @@ bundle (engine, launcher, saved-chat layer).
 Built on: **Inkling 2 Mini** by Thinking Machines; the **EXL3 trellis codec** by turboderp (exllamav3, after QTIP);
 the **Escha W2 format** by Escha Labs; **Unsloth's llama.cpp port** of the model and the upstream llama.cpp work by
 Piotr Wilkin, Daniel Han, Aldehir Rojas and Xuan-Son Nguyen. Full list: [CREDITS.md](CREDITS.md).
+Contributor: Elhussein Ahmed ([@emourad](https://github.com/emourad)), the Linux launcher fixes (#2). Thank you.
 
 **What is special**
 
